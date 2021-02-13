@@ -15,4 +15,23 @@ router.get('/',(req,res)=>{
     })
     
 })
+
+router.get('/project/:slug',(req,res)=>{
+    const data=req.context
+    const projectSlug = req.params.slug
+    const projectCtr = new ProjectController()
+    projectCtr.get({slug:projectSlug})
+    .then(projects=>{
+        if(projects.length == 0){
+            throw new Error('Project Not Found')
+            return
+        }
+        const project = projects[0]
+        data['project'] = project
+        res.render('project',data)
+    })
+    .catch(err=>{
+        res.send('OOps - '+err.message)
+    })
+})
 module.exports = router

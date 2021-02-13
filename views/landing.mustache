@@ -14,8 +14,8 @@
         
                                             
         
-            <section style="background:url('{{{page.hero.img_background}}}=s2048');background-size:cover;background-position:center;">
-                <div class="gradient-div py-3" style="height:76vh">
+            <section id="hero-section" style="background:url('{{{page.hero.img_background}}}=s2048');background-size:cover;background-position:center;">
+                <div class="gradient-div py-3" style="height:80vh">
             
                     <div class="container">
                         <div class="row justify-content-center header-row">
@@ -32,7 +32,7 @@
                 </div>
             </section>
 
-            <section class="py-5 py-md-7">
+            <section id="project-section" class="py-5 py-md-7">
                 <div class="container py-md-5">
                     <div class="row block-header">
                         <div class="col-sm-8 mx-auto text-center">
@@ -45,7 +45,7 @@
                     <div class="row mt-5 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
                         {{#projects}}
                         <div class="col-md-4 col-sm-12 mb-2r">
-                            <a href="/project/portfolio-2zw61z">
+                            <a href="/project/{{slug}}">
                                 <div class="position-relative project">
                                     <div class="image position-relative ">
                                         <img src="{{{image}}}" class="img-fluid w-100 d-block">
