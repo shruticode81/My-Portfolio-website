@@ -1,0 +1,21 @@
+{
+    "hero": {
+        "greeting":"Welcome to my portfolio site",
+        "introduction":"Hello! I am a full stack Web developer from India",
+        "img_profile":"https://lh3.googleusercontent.com/daTDOiP_vkqToSii2K2rKyNLD7LrHKjUlFrrbomjHBYYfsSkPta9P8NvXx0qWFRsUrKT6hiuFf5x7CLf7ihfjGLVsC0naAqplTzuYd4",
+        "img_background": "https://lh3.googleusercontent.com/Nhh2l0CGpxmZauhHnB_VvJc39dBOZeJtnof9JNOyXzeeYaO5e7ntAbIDPUpORL-8f9Gjebp3E56_QyIkPXFv5U7JQ9DncSjJck3cOE8"
+    },
+    "projects":{
+        "header":"My Projects",
+        "subheader":"Take a Look at My most Recent work!!"
+    },
+    
+    "image_profile":"https://photos.app.goo.gl/fk9QJBcL1ony5oKt7",
+    "greeting": "hello! welcome to my portfolio site",
+    "introduction":"Hello! I am a web developer from india",
+    "languages" : [
+        {"name": "JavaScript","year":2},
+        {"name":"python" ,"year":3},
+        {"name":"Java","year":4}
+    ]
+}
