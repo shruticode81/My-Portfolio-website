@@ -1,15 +1,21 @@
 {
     "hero": {
         "greeting":"Welcome to my portfolio site",
-        "introduction":"Hello! I am a full stack Web developer from India",
+        "introduction":"Hello! I am a full stack Web developer from India.",
+        "more_info":"I am a passionate programmer loves to build exciting projects and solve a problem using web development skills.Proficient in frontend as well as backend tech stack. Mostly work on server side problems and connectivity between both client side and server side. My goal is to provide a smooth experience to users. Love to explore new emerging technologies as well as exotic places.",      
         "img_profile":"https://lh3.googleusercontent.com/daTDOiP_vkqToSii2K2rKyNLD7LrHKjUlFrrbomjHBYYfsSkPta9P8NvXx0qWFRsUrKT6hiuFf5x7CLf7ihfjGLVsC0naAqplTzuYd4",
-        "img_background": "https://lh3.googleusercontent.com/RwWSD1hsEWs6Q6l9JZPlLzFaBm6YV_uTy1lk6nx3Jd4hC13BfJz-MKr_aYr_LhmiLlDbDptjm7nVAr0oSbZOvhj7_pxpKRQ79XXxm9w"
+        "img_background": "https://lh3.googleusercontent.com/RwWSD1hsEWs6Q6l9JZPlLzFaBm6YV_uTy1lk6nx3Jd4hC13BfJz-MKr_aYr_LhmiLlDbDptjm7nVAr0oSbZOvhj7_pxpKRQ79XXxm9w",
+        "flag":"https://lh3.googleusercontent.com/iyZHq0n8ayXAGmsYiTlXzew88mA7P_q1eHjBLSwQmKLyuA8uBVi9P1REPxtgvKtuhByKQBtK5_H1mwflHdlj-I6gSnd9llOonLIAg7Y"
     },
     "projects":{
         "header":"My Projects",
         "subheader":"Take a Look at My most Recent work!!"
     },
-    
+    "contact":{
+        "header":"Let's Collaborate!!",
+        "subheader":"If you're interested in working with me , fill out the form below and I will get back to you right away!"
+    },
+
     "image_profile":"https://photos.app.goo.gl/fk9QJBcL1ony5oKt7",
     "greeting": "hello! welcome to my portfolio site",
     "introduction":"Hello! I am a web developer from india",

@@ -3,8 +3,17 @@
 <head>
     <title>My Portfolio</title>
     <meta name="description" content="" />
-
+    <meta charset="UTF-8">
     {{>head}}
+    <!-- <style>
+        @media screen and (max-width:990px) {
+            #wrap{
+                overflow-y:scroll;
+                /* overflow: auto; */
+            }
+            
+        }
+    </style> -->
 </head>
 
 <body>
@@ -15,16 +24,21 @@
                                             
         
             <section id="hero-section" style="background:url('{{{page.hero.img_background}}}=s2048');background-size:cover;background-position:center;">
-                <div class="gradient-div py-3" style="height:80vh">
+                <div class="gradient-div py-3" style="height:139vh">
             
                     <div class="container">
                         <div class="row justify-content-center header-row">
                             <div class="col-12 col-md-8 col-lg-7 text-center text-white">
                                 <img class="mt-4" style="width:160px;border-radius: 50%;" src="{{{page.hero.img_profile}}}=s320-c">
-                                <h1 class="display-3 mt-1">{{page.hero.greeting}}</h1>
-                                <p class="lead text-white mb-4 mt-3">
-                                {{page.hero.introduction}}
-                                </p>
+                                <h1 style = "color:fuchsia;" class="display-3 mt-1">{{page.hero.greeting}}</h1>
+                                <div id = "wrapping">
+                                    <p style="color: antiquewhite;"class="lead text-white mb-4 mt-3">
+                                        {{page.hero.introduction}} <img style="width: 50px;height: 28px;" src="{{{page.hero.flag}}}"><br>
+                                        {{page.hero.more_info}}
+        
+                                    </p>
+                                </div>
+                                
                                 
                             </div>
                         </div>
@@ -36,9 +50,9 @@
                 <div class="container py-md-5">
                     <div class="row block-header">
                         <div class="col-sm-8 mx-auto text-center">
-                            <h1 class="display-4 mt-2">{{page.projects.header}}</h1>
-                            <hr>
-                            <p class="lead">{{page.projects.subheader}}</p>
+                            <h1 style="font-weight:normal;color: teal;" class="display-4 mt-2">{{page.projects.header}}</h1>
+                            <hr size="50" noshade>
+                            <p style ="font-size: x-large;font-weight:normal;" class="lead">{{page.projects.subheader}}</p>
                         </div>
                     </div>
                    
@@ -64,10 +78,43 @@
                    
                 </div>
             </section>
-
+            <section style="width: 100%;" id="contact-section" class="py-md-5 mb-2r mb-5">
+                <div  id="gradient" class="container">
+                    <div class="row">
+                        <div class="col-sm-8 mx-auto text-center">
+                            <h1 style="color:bisque;" class="display-4 mt-2 section-title">{{page.contact.header}}</h1>
+                            <p style="color: darkgray; font-size: large;">{{page.contact.subheader}}</p>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-sm-6 mx-auto" data-aos="fade-left" data-aos-duration="1000">
+                            <form action="" method="post">
+                                <div class="form-group">
+                                    <input id="contact-form-name" style="background-color: bisque;" type="text" id="edd-user-name" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="form-group">
+                                    <input id="contact-form-email" style="background-color: bisque;" type="email" id="edd-user-email" class="form-control" placeholder="Email" required>
+                                </div>
+                                <div class="form-group">
+                                    <input id="contact-form-subject" style="background-color: bisque;" type="text" id="edd-user-subject" class="form-control" placeholder="Subject">
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="contact-form-message" style="background-color: bisque;" name="" id="edd-user-message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                                </div>
+                                <div class="form-group text-center">
+                                    <input id="btn-contact-submit" style="background-color: darkgray;border-color: bisque;"type="submit" id="btn-register" class="btn btn-primary btn-send-message" value="Send Message">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
         {{>footer}}
     </div>
 
     {{>scripts}}
+    <script src="{{{cdn}}}/js/contact.js">
+        
+    </script>
 </body>
 </html>
